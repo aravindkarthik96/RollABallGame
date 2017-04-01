@@ -46,4 +46,10 @@ public class PlayerControler : MonoBehaviour {
 		scoreText.text = "Score : " + score.ToString();
 
 	}
+
+	void Update() {
+		if (transform.position.y < -10) {
+			gameOverText.gameObject.SetActive (true);
+		}
+	}
 }
